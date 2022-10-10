@@ -1144,7 +1144,7 @@ a:focus-visible {
 /* Ola's btn end */
 
 /* cyphers btn start */
-.cypher-btn-1 {
+.cypher-btn {
 	color: #fff;
 	font-size: 1.2rem;
 	padding: 1em 2.5em;
@@ -1154,7 +1154,7 @@ a:focus-visible {
 	border: none;
 }
 
-.cypher-btn-1::before {
+.cypher-btn::before {
 	content: '';
 	position: absolute;
 	left: -10px;
@@ -1168,7 +1168,7 @@ a:focus-visible {
 	transition: all 0.4s;
 }
 
-.cypher-btn-1::after {
+.cypher-btn::after {
 	content: '';
 	position: absolute;
 	bottom: -10px;
@@ -1182,8 +1182,8 @@ a:focus-visible {
 	transition: all 0.4s;
 }
 
-.cypher-btn-1:hover:before,
-.cypher-btn-1:hover:after {
+.cypher-btn:hover:before,
+.cypher-btn:hover:after {
 	width: 100%;
 	height: 100%;
 }
@@ -1458,6 +1458,7 @@ a:focus-visible {
 }
 
 /* ANIKET btn end */
+
 
 /* Harsh Jain's button starts*/
 .harsh-jain-button-1 {
@@ -1927,3 +1928,89 @@ box-shadow: rgb(40, 159, 237) 5px 5px 0px 0px, rgb(95, 184, 255) 10px 10px 0px 0
 }
 /* Nitish-btn-2 end */
 
+
+/* MohammadRehanPatel btn Start  */
+  
+.MRP-wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+ .MRP-wrap .MRP-button {
+    min-width: 300px;
+    min-height: 60px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    background: #4FD1C5;
+  background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    }
+  
+ .MRP-wrap button::before {
+  content: '';
+    border-radius: 1000px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid #00FFCB;
+    box-shadow: 0 0 60px rgba(0,255,203,.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .MRP-button:hover, .MRP-button:focus {
+    color: #313133;
+    transform: translateY(-6px);
+  }
+  
+  .MRP-wrap button:hover::before,.wrap button:focus::before {
+    opacity: 1;
+  }
+  
+  .MRP-wrap button::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid #00FFCB;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+  
+  .MRP-wrap button:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+  }  
+/* MohammadRehanPatel btn End  */
